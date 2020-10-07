@@ -1,3 +1,5 @@
+<button (click)="logout()">Logout</button>
+<br/>
 <div *ngIf="username">Welcome {{ username }}</div>
 <div *ngIf="roles.includes('customer')">
   <app-store-nav></app-store-nav>

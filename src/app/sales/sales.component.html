@@ -1,9 +1,18 @@
 <p>sales works!</p>
 <table>
+    <tr>
+        <th>Transaction ID</th>
+        <th>Transaction Date</th>
+        <th>Transaction Amount</th>
+        <th>Payment Method</th>
+    </tr>
     <tr *ngFor="let sale of sales">
         <td>{{sale.txn_id}}</td>
         <td>{{sale.txn_date}}</td>
         <td>{{sale.txn_amount}}</td>
-        <td>{{sale.txn_method</td>
+        <td>{{sale.txn_method}}</td>
+    </tr>
+    <tr *ngIf="sales === undefined">
+        <td colspan="4">No data</td>
     </tr>
 </table>

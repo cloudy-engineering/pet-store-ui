@@ -12,4 +12,7 @@
         <td>{{pet.pet_age}}</td>
         <td>{{pet.pet_name}}</td>
     </tr>
+    <tr *ngIf="pets === undefined">
+        <td colspan="4">No data</td>
+    </tr>
 </table>
