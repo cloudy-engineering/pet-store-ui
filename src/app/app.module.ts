@@ -7,17 +7,25 @@ import { StoreNavComponent } from './store-nav/store-nav.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { initializer } from './initializer.service';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { PetComponent } from './pet/pet.component';
+import { SalesComponent } from './sales/sales.component';
+import { RewardsComponent } from './rewards/rewards.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreNavComponent,
-    AdminNavComponent
+    AdminNavComponent,
+    PetComponent,
+    SalesComponent,
+    RewardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     KeycloakAngularModule,
+    HttpClientModule,
   ],
   providers: [
     {

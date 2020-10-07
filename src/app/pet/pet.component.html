@@ -1,0 +1,15 @@
+<p>pet works!</p>
+<table>
+    <tr>
+        <th>Pet ID</th>
+        <th>Pet Type</th>
+        <th>Pet Age</th>
+        <th>Pet Name</th>
+    </tr>
+    <tr *ngFor="let pet of pets">
+        <td>{{pet.pet_id}}</td>
+        <td>{{pet.pet_type}}</td>
+        <td>{{pet.pet_age}}</td>
+        <td>{{pet.pet_name}}</td>
+    </tr>
+</table>
