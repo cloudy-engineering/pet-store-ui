@@ -15,11 +15,13 @@ export class RewardsComponent implements OnInit {
   constructor(private store: StoreService) { }
 
   ngOnInit(): void {
-    this.store.getRewards().pipe( 
+    const reward$ = this.store.getRewards().pipe( 
       map(results => {
         this.rewards = results;
       })
     );
+
+    reward$.subscribe(data => data);
   }
 
 }

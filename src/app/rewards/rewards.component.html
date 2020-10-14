@@ -1,6 +1,11 @@
 <p>rewards works!</p>
 <table>
+    <tr>
+        <th>Reward Id</th>
+        <th>Reward Type</th>
+    </tr>
     <tr *ngFor="let reward of rewards">
-        <td></td>
+        <td>{{reward.reward_id}}</td>
+        <td>{{reward.reward_type}}</td>
     </tr>
 </table>
