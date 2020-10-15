@@ -4,7 +4,7 @@
         <th>Reward Id</th>
         <th>Reward Type</th>
     </tr>
-    <tr *ngFor="let reward of rewards">
+    <tr *ngFor="let reward of rewards | async">
         <td>{{reward.reward_id}}</td>
         <td>{{reward.reward_type}}</td>
     </tr>
