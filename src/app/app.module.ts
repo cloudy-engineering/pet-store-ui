@@ -11,6 +11,7 @@ import { PetComponent } from './pet/pet.component';
 import { SalesComponent } from './sales/sales.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminNavComponent,
     PetComponent,
     SalesComponent,
-    RewardsComponent
+    RewardsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
