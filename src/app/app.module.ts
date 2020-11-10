@@ -12,6 +12,7 @@ import { SalesComponent } from './sales/sales.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutNewComponent } from './checkout-new/checkout-new.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     PetComponent,
     SalesComponent,
     RewardsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CheckoutNewComponent
   ],
   imports: [
     BrowserModule,
